@@ -2,13 +2,13 @@
 
 Suporta Actuator, Eureka Client, Web Starter
 
-ServiÁo Spring Boot para convers„o de temperaturas:
+Servi√ßo Spring Boot para convers√£o de temperaturas:
 
-As chamadas s„o realizadas da seguinte forma:
+As chamadas s√£o realizadas da seguinte forma:
 
-http://localhost:9001/temperatura/converter/ctof/(temp)
-http://localhost:9001/temperatura/converter/ctok/(temp)
-http://localhost:9001/temperatura/converter/ftoc/(temp)
-http://localhost:9001/temperatura/converter/ftok/(temp)
-http://localhost:9001/temperatura/converter/ktoc/(temp)
-http://localhost:9001/temperatura/converter/ktof/(temp)
+[link](http://localhost:9001/temperatura/converter/ctof/10)
+[link](http://localhost:9001/temperatura/converter/ctok/10)
+[link](http://localhost:9001/temperatura/converter/ftoc/10)
+[link](http://localhost:9001/temperatura/converter/ftok/10)
+[link](http://localhost:9001/temperatura/converter/ktoc/10)
+[link](http://localhost:9001/temperatura/converter/ktof/10)
