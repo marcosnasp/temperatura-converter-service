@@ -11,37 +11,40 @@ import com.example.temperatura.converter.interfaces.CalculadoraTemperatura;
 @RestController
 @RequestMapping("/converter")
 public class TemperaturaConverterController {
+	private final CalculadoraTemperatura calculadoraTemperatura;
 
 	@Autowired
-	private CalculadoraTemperatura calculadoraTemperatura;
-	
+	public TemperaturaConverterController(CalculadoraTemperatura calculadoraTemperatura) {
+		this.calculadoraTemperatura = calculadoraTemperatura;
+	}
+
 	@GetMapping("/ctof/{tempCelsius}")
-	public Double celsiusToFareinheit(@PathVariable Double tempCelsius) {
+	public Double celsiusToFareinheit(@PathVariable(name = "tempCelsius") Double tempCelsius) {
 		return calculadoraTemperatura.celsiusToFarenheit(tempCelsius);
 	}
 	
 	@GetMapping("/ctok/{tempCelsius}")
-	public Double celsiusToKelvin(@PathVariable Double tempCelsius) {
+	public Double celsiusToKelvin(@PathVariable(name = "tempCelsius") Double tempCelsius) {
 		return calculadoraTemperatura.celsiusToKelvin(tempCelsius);
 	}
 	
 	@GetMapping("/ftoc/{tempFarenheit}")
-	public Double farenheitToCelsius(@PathVariable Double tempFarenheit) {
+	public Double farenheitToCelsius(@PathVariable(name = "tempFarenheit") Double tempFarenheit) {
 		return calculadoraTemperatura.farenheitToCelsius(tempFarenheit);
 	}
 	
 	@GetMapping("/ftok/{tempFarenheit}")
-	public Double farenheitToKelvin(@PathVariable Double tempFarenheit) {
+	public Double farenheitToKelvin(@PathVariable(name = "tempFarenheit") Double tempFarenheit) {
 		return calculadoraTemperatura.farenheitToKelvin(tempFarenheit);
 	}
 	
 	@GetMapping("/ktoc/{tempKelvin}")
-	public Double kelvinToCelsius(@PathVariable Double tempKelvin) {
+	public Double kelvinToCelsius(@PathVariable(name = "tempKelvin") Double tempKelvin) {
 		return calculadoraTemperatura.kelvinToCelsius(tempKelvin);
 	}
 	
 	@GetMapping("/ktof/{tempKelvin}")
-	public Double kelvinToFarenheit(@PathVariable Double tempKelvin) {
+	public Double kelvinToFarenheit(@PathVariable(name = "tempKelvin") Double tempKelvin) {
 		return calculadoraTemperatura.kelvinToFarenheit(tempKelvin);
 	}
 	
