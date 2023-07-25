@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.completion.importOrder": ["", "javax", "java", "#"],
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
+}
