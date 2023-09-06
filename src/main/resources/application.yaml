@@ -5,3 +5,10 @@ server:
   port: 9001
   servlet:
     context-path: /temperatura
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: google-client-id
+            client-secret: google-client-secret

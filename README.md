@@ -17,3 +17,8 @@ As chamadas são realizadas da seguinte forma:
 [http://localhost:9001/temperatura/converter/ktoc/10](http://localhost:9001/temperatura/converter/ktoc/10)
 
 [http://localhost:9001/temperatura/converter/ktof/10](http://localhost:9001/temperatura/converter/ktof/10)
+
+## Link baeldung:
+
+[https://www.baeldung.com/spring-boot-api-key-secret](https://www.baeldung.com/spring-boot-api-key-secret)
+
